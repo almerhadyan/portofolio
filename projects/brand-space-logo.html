@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Animation - Brand Space — Almer Hadyan</title>
+  <link rel="icon" type="image/png" href="../asset/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .space-canvas {
+      height: 380px;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .space-svg {
+      width: 100%;
+      max-width: 440px;
+      transition: transform 300ms ease;
+    }
+    .space-canvas:hover .space-svg {
+      transform: scale(1.04);
+    }
+  </style>
+</head>
+<body>
+  <div class="site-loader" role="status" aria-label="Loading portfolio">
+    <div class="site-loader-panel" aria-hidden="true">
+      <div class="site-loader-header"><div class="site-loader-dots"><i></i><i></i><i></i></div><span class="site-loader-file">portfolio / init.js</span><span class="site-loader-state">RUNNING</span></div>
+      <div class="site-loader-code"><div><span>01</span> <b>const</b> portfolio = <em>"Almer Hadyan"</em>;</div><div><span>02</span> <b>await</b> loadProjects();</div><div><span>03</span> renderExperience(portfolio);</div><div><span>04</span> <strong>return</strong> <em>"ready"</em>;</div></div>
+      <div class="site-loader-progress"><i></i></div>
+      <div class="site-loader-message">BUILDING INTERFACE <span>...</span></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../index.html" class="brand-link">
+        <img class="brand-emblem" src="../asset/logo.png" alt="Almer Hadyan logo" />
+        <div>
+          <div class="brand-text-main">
+            <span>ALMER HADYAN</span>
+            <span class="brand-dot"></span>
+          </div>
+          <div class="brand-subtext">DESIGN_ENGINEER.tsx</div>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <a href="../index.html" class="btn-dark">
+          <span style="color: #00F0FF;">←</span>
+          <span>cd /portfolio/home</span>
+        </a>
+        <a href="../index.html#contact" class="btn-cyan">
+          <span>$ hire</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div style="margin-bottom: 24px;">
+      <div class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-bottom: 16px;">
+        <a href="../index.html" style="color: var(--text-muted);">~/almer-hadyan</a> /
+        <a href="../index.html#projects" style="color: var(--text-muted);">deployments</a> /
+        <span style="color: var(--cyan);">logo-animation</span>
+      </div>
+
+      <div class="tags-row">
+        <span class="tag tag-green">&gt; Project animation</span>
+        <span class="tag tag-gray">Figma · Lottie</span>
+      </div>
+
+      <h1 style="font-size: 44px; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">
+        Logo Animation - Brand Space logo animation
+      </h1>
+
+      <p style="font-size: 16px; color: var(--text-muted); max-width: 800px; line-height: 1.6; margin-bottom: 32px;">
+        This image is a project poster for an animation logo. It explains that the logo animation was made using Lottie files in 6 minutes with a black and white theme. The poster also shows the project creators, a YouTube preview, and a QR code to view the animated logo.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px;">
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">CREATOR</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--cyan); margin-top: 4px;">Almer Hadyan</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">FRAMERATE</div>
+          <div style="font-size: 16px; font-weight: 800; color: #FFFFFF; margin-top: 4px;">30 FPS Animation</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">TIMEFRAME</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--amber); margin-top: 4px;">10 SEC Duration</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">CREATION SPRINT</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--green); margin-top: 4px;">6 Minutes Lottie Build</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Container (Matches Screenshot 2026-09-29 091439.png) -->
+    <div class="card" style="overflow: hidden; margin-bottom: 48px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background-color: #080B0F; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-left: 12px;">preview://space-logo/animation.lottie</span>
+        </div>
+        <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">&gt; branch: feat/spatial-v3</span>
+      </div>
+
+      <div class="space-canvas">
+        <svg class="space-svg" viewBox="0 0 500 220" fill="none">
+          <!-- S -->
+          <path d="M92 68 C68 74 52 88 46 98 C44 102 68 108 88 112 C98 115 92 128 72 138" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- I / P stem -->
+          <line x1="138" y1="112" x2="138" y2="146" stroke="white" stroke-width="8" stroke-linecap="square"/>
+          <!-- A (delta) -->
+          <path d="M192 150 L234 72 L274 148 L234 126 L216 138" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- C -->
+          <path d="M312 130 C306 108 326 84 356 76 L356 98" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- E (three bars) -->
+          <line x1="382" y1="92" x2="444" y2="92" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <line x1="382" y1="118" x2="444" y2="118" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+          <line x1="382" y1="146" x2="444" y2="146" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+      <div class="card" style="padding: 32px;">
+        <div class="section-badge badge-amber">01 // GEOMETRIC MINIMALISM</div>
+        <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Vector Precision &amp; Lottie Flow</h2>
+        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+          A stripped-back brand mark reducing S-P-A-C-E to foundational vector primitives. Created in Figma and brought to life through lightweight JSON vector motion curves.
+        </p>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div class="font-mono" style="font-size: 11px; color: var(--text-dim); margin-bottom: 16px;">// ACTIONS</div>
+        <a href="../index.html#projects" class="btn-cyan" style="width: 100%; justify-content: center;">
+          ← Back to All Projects
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: #fff;">&lt;/&gt; ALMER HADYAN</strong>
+        <span style="margin: 0 8px; color: var(--text-dim);">|</span>
+        <span>Designed &amp; engineered with pixel precision</span>
+      </div>
+      <div>
+        <span>status: <strong style="color: var(--green);">200 OK</strong></span>
+        <span style="margin-left: 16px;">© 2026 Almer Hadyan 🇮🇩</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

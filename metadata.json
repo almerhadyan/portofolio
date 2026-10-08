@@ -1,0 +1,8 @@
+{
+  "name": "PixelToCode",
+  "description": "Instantly convert design images into fully functional, interactive, and responsive websites using clean HTML, CSS, and JavaScript.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

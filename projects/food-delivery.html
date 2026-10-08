@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Delivery iOS UI Kit — Almer Hadyan</title>
+  <link rel="icon" type="image/png" href="../asset/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .showcase-banner {
+      width: 100%;
+      height: 440px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #FDB954 0%, #FCA93F 50%, #F5972C 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      padding: 40px;
+      color: #141414;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .showcase-left {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2;
+    }
+    .showcase-right {
+      width: 55%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      z-index: 2;
+    }
+    .phone-mockup {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-loader" role="status" aria-label="Loading portfolio">
+    <div class="site-loader-panel" aria-hidden="true">
+      <div class="site-loader-header"><div class="site-loader-dots"><i></i><i></i><i></i></div><span class="site-loader-file">portfolio / init.js</span><span class="site-loader-state">RUNNING</span></div>
+      <div class="site-loader-code"><div><span>01</span> <b>const</b> portfolio = <em>"Almer Hadyan"</em>;</div><div><span>02</span> <b>await</b> loadProjects();</div><div><span>03</span> renderExperience(portfolio);</div><div><span>04</span> <strong>return</strong> <em>"ready"</em>;</div></div>
+      <div class="site-loader-progress"><i></i></div>
+      <div class="site-loader-message">BUILDING INTERFACE <span>...</span></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../index.html" class="brand-link">
+        <img class="brand-emblem" src="../asset/logo.png" alt="Almer Hadyan logo" />
+        <div>
+          <div class="brand-text-main">
+            <span>ALMER HADYAN</span>
+            <span class="brand-dot"></span>
+          </div>
+          <div class="brand-subtext">DESIGN_ENGINEER.tsx</div>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <a href="../index.html" class="btn-dark">
+          <span style="color: #00F0FF;">←</span>
+          <span>cd /portfolio/home</span>
+        </a>
+        <a href="../index.html#contact" class="btn-cyan">
+          <span>$ hire</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <!-- Breadcrumb & Tags -->
+    <div style="margin-bottom: 24px;">
+      <div class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-bottom: 16px;">
+        <a href="../index.html" style="color: var(--text-muted);">~/almer-hadyan</a> /
+        <a href="../index.html#projects" style="color: var(--text-muted);">deployments</a> /
+        <span style="color: var(--cyan);">food-delivery</span>
+      </div>
+
+      <div class="tags-row">
+        <span class="tag tag-green">&gt; Project ENGINE</span>
+        <span class="tag tag-gray">intermediate designer · FIGMA TOKENS</span>
+        <span class="tag tag-cyan">STATUS: project</span>
+      </div>
+
+      <h1 style="font-size: 44px; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">
+        Food — Food delivery app, search some food easy and simple
+      </h1>
+
+      <p style="font-size: 16px; color: var(--text-muted); max-width: 800px; line-height: 1.6; margin-bottom: 32px;">
+        Design UI food apps, for buy some food more easy with online, in this ui i make for on boarding, log in, sign up page, home page, chef interface, buying page and, acount page with the money you have, this ui i make more than 50 screen, include log in and on boarding.
+      </p>
+
+      <!-- Key Metrics -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px;">
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">ROLE // AUTHOR</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--cyan); margin-top: 4px;">Almer Hadyan (Developer App)</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">COVER DESIGN</div>
+          <div style="font-size: 16px; font-weight: 800; color: #FFFFFF; margin-top: 4px;">2 Bonus Covers</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">TOTAL SCREENS</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--green); margin-top: 4px;">50+ iOS Screens</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">SYSTEM TOKENS</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--amber); margin-top: 4px;">Figma Component Library</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Presentation Board (Matches Screenshot 2026-04-13 133642.png) -->
+    <div class="card" style="overflow: hidden; margin-bottom: 48px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background-color: #080B0F; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-left: 12px;">preview://food-delivery/ios-ui-kit.fig</span>
+        </div>
+        <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">&gt; git open the project/2025</span>
+      </div>
+
+      <div class="showcase-banner" style="padding: 0; background: linear-gradient(135deg, #FDB954 0%, #F5972C 100%); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="../asset/food%20app%20burger.png" alt="Food app burger showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;" />
+      </div>
+    </div>
+
+    <!-- Case Study Sections -->
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+      <div>
+        <div class="card" style="padding: 32px; margin-bottom: 24px;">
+          <div class="section-badge badge-cyan">01 // OVERVIEW & ARCHITECTURE</div>
+          <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Production UI Engineering</h2>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8; margin-bottom: 20px;">
+            A comprehensive 50+ screen iOS UI Kit and interactive Figma prototype designed to streamline online food ordering. Built with global style guides, reusable component tokens, and dual interfaces for both customers and restaurant chefs.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
+            <div style="padding: 16px; border-radius: 12px; background: #070A0E; border: 1px solid rgba(255,255,255,0.06);">
+              <div class="font-mono" style="font-size: 11px; color: var(--amber); margin-bottom: 6px;">&gt; THE CHALLENGE</div>
+              <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">Cluttered checkout flows and confusing discovery in existing food apps slow down ordering.</p>
+            </div>
+            <div style="padding: 16px; border-radius: 12px; background: #070A0E; border: 1px solid rgba(255,255,255,0.06);">
+              <div class="font-mono" style="font-size: 11px; color: var(--green); margin-bottom: 6px;">&gt; THE SOLUTION</div>
+              <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">Engineered a clean modular system covering onboarding, live category filters, cart, and chef management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="padding: 28px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim); margin-bottom: 16px;">// DELIVERABLES</div>
+          <ul style="list-style: none; font-size: 13px; color: var(--text-muted); line-height: 2;">
+            <li><span style="color: var(--cyan);">✓</span> 40 User App Screens</li>
+            <li><span style="color: var(--cyan);">✓</span> 10+ Chef App Screens</li>
+            <li><span style="color: var(--cyan);">✓</span> Global Guidestyle &amp; Tokens</li>
+            <li><span style="color: var(--cyan);">✓</span> 2 Bonus Cover Designs</li>
+          </ul>
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08);">
+            <a href="../index.html#projects" class="btn-cyan" style="width: 100%; justify-content: center;">
+              ← Back to All Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: #fff;">&lt;/&gt; ALMER HADYAN</strong>
+        <span style="margin: 0 8px; color: var(--text-dim);">|</span>
+        <span>Designed &amp; engineered with pixel precision</span>
+      </div>
+      <div>
+        <span>status: <strong style="color: var(--green);">200 OK</strong></span>
+        <span style="margin-left: 16px;">© 2026 Almer Hadyan 🇮🇩</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

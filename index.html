@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almer Hadyan — Design Engineer Portfolio | PixelToCode</title>
+  <meta name="description" content="Instantly convert design images into fully functional, interactive, and responsive websites using clean HTML, CSS, and JavaScript." />
+  <meta property="og:title" content="Almer Hadyan — Design Engineer Portfolio | PixelToCode" />
+  <meta property="og:description" content="Instantly convert design images into fully functional, interactive, and responsive websites using clean HTML, CSS, and JavaScript." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="./asset/logo.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body id="top">
+  <div class="site-loader" role="status" aria-label="Loading portfolio">
+    <div class="site-loader-panel" aria-hidden="true">
+      <div class="site-loader-header">
+        <div class="site-loader-dots"><i></i><i></i><i></i></div>
+        <span class="site-loader-file">portfolio / init.js</span>
+        <span class="site-loader-state">RUNNING</span>
+      </div>
+      <div class="site-loader-code">
+        <div><span>01</span> <b>const</b> portfolio = <em>"Almer Hadyan"</em>;</div>
+        <div><span>02</span> <b>await</b> loadProjects();</div>
+        <div><span>03</span> renderExperience(portfolio);</div>
+        <div><span>04</span> <strong>return</strong> <em>"ready"</em>;</div>
+      </div>
+      <div class="site-loader-progress"><i></i></div>
+      <div class="site-loader-message">BUILDING INTERFACE <span>...</span></div>
+    </div>
+  </div>
+  <!-- ======================================================================
+       TOP NAVIGATION BAR
+  ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Brand Left -->
+      <a href="#top" class="brand-link">
+        <img class="brand-emblem" src="asset/logo.png" alt="Almer Hadyan logo" />
+        <div>
+          <div class="brand-text-main">
+            <span>ALMER HADYAN</span>
+            <span class="brand-dot"></span>
+          </div>
+          <div class="brand-subtext">DESIGN_ENGINEER.tsx</div>
+        </div>
+      </a>
+
+      <!-- Center Navigation Pill -->
+      <nav class="nav-pill">
+        <a href="#projects" class="nav-item">&gt; Project</a>
+        <a href="#explorer" class="nav-item">&gt; repo</a>
+        <a href="#philosophy" class="nav-item">&gt; philosophy</a>
+        <a href="#skills" class="nav-item">&gt; stack</a>
+        <a href="#experience" class="nav-item">&gt; commits</a>
+        <a href="#sandbox" class="nav-item">&gt; sandbox</a>
+        <a href="#contact" class="nav-item">&gt; dispatch</a>
+      </nav>
+
+      <!-- Right Status & CTA -->
+      <div class="header-right">
+        <div class="status-pill">
+          <span class="status-dots">
+            <span class="status-dot"></span>
+            <span class="status-dot"></span>
+          </span>
+          <span>AVAILABLE Q2/Q3 '26</span>
+        </div>
+        <a href="#contact" class="btn-cyan">
+          <span style="border: 1px solid rgba(0,0,0,0.4); border-radius: 3px; padding: 0 3px; font-size: 9px; line-height: 1;">&gt;_</span>
+          <span>$ hire</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ====================================================================
+         HERO SECTION
+    ==================================================================== -->
+    <section class="hero-section">
+      <!-- Left Column -->
+      <div>
+        <div class="hero-tag">
+          <span class="hero-tag-dots">
+            <span class="hero-tag-dot"></span>
+            <span class="hero-tag-dot"></span>
+          </span>
+          <span class="hero-tag-cyan">SYSTEM ONLINE</span>
+          <span class="hero-tag-gray">// PROGRAMMER &amp; DESIGN ENGINEER</span>
+        </div>
+
+        <h1 class="hero-title">
+          I craft digital<br/>
+          experiences at the<br/>
+          intersection of<br/>
+          <span class="underline-cyan">design precision</span> &amp;<br/>
+          <span class="underline-green">code architecture.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Hi, I'm <strong>Almer Hadyan</strong> — UI/UX Designer, Graphic Designer &amp; Creative Technologist crafting products at the intersection of crystalline clarity and joyful play.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#projects" class="btn-cyan">
+            <span>$ explore_work()</span>
+            <span>↓</span>
+          </a>
+          <a href="#contact" class="btn-dark">
+            <span>&gt; init_chat --open</span>
+            <span style="color: var(--cyan);">↗</span>
+          </a>
+          <div class="git-badge">
+            <span class="git-badge-green">git:(main)</span> v2.8.0
+          </div>
+        </div>
+
+        <div class="hero-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <span>Open for internship, contract, and select freelance inquiries</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Inspector Terminal Card (Matches Group 4.png) -->
+      <div class="hero-inspector-wrap">
+        <div class="inspector-glow"></div>
+
+        <!-- Floating Badge Top: </> Figma -> JSX Auto-Sync -->
+        <div class="floating-badge-top">
+          <span style="color: var(--cyan); font-weight: 700;">&lt;/&gt;</span>
+          <span>Figma → JSX Auto-Sync</span>
+        </div>
+
+        <!-- Terminal Window -->
+        <div class="inspector-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+              <span class="window-title">~/almer/inspector.tsx</span>
+            </div>
+            <span class="badge-inspect">LIVE_INSPECT</span>
+          </div>
+
+          <div class="window-body">
+            <!-- Profile Subcard -->
+            <div class="profile-card">
+              <div class="profile-avatar-wrap">
+                <div class="profile-avatar">
+                  <svg viewBox="0 0 80 80" width="100%" height="100%">
+                    <rect width="80" height="80" fill="#234d20" />
+                    <circle cx="15" cy="18" r="18" fill="#366f2b" />
+                    <circle cx="65" cy="20" r="22" fill="#2d5e24" />
+                    <circle cx="45" cy="10" r="15" fill="#488a36" />
+                    <rect x="0" y="45" width="80" height="35" fill="#1b3b18" />
+                    <path d="M40 78 L52 46 L68 54 L66 78 Z" fill="#1a1615" />
+                    <path d="M20 78 L23 44 L44 44 L46 78 Z" fill="#23272e" />
+                    <circle cx="33" cy="30" r="9" fill="#d8a886" />
+                    <path d="M24 27 C24 20 42 20 42 27 Z" fill="#141619" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="profile-name">Almer Hadyan</div>
+                  <div class="profile-role">Hybrid Design Engineer</div>
+                  <div class="profile-tz">jakarta // GMT+7</div>
+                </div>
+              </div>
+              <div class="profile-status">
+                <div style="font-size: 11px; font-weight: 700; color: var(--green);">ONLINE</div>
+                <div style="font-size: 10px; color: var(--text-dim); margin-top: 2px;">LATENCY 4ms</div>
+              </div>
+            </div>
+
+            <!-- Code Block Subcard -->
+            <div class="code-box">
+              <div style="color: #64748B;">// Design Token Architecture</div>
+              <div style="margin-top: 4px;">
+                <span style="color: #FF7B72;">const</span> <span style="color: #79C0FF;">craftEngine</span> = {
+              </div>
+              <div style="padding-left: 16px;">
+                <span style="color: #D2A8FF;">precision</span>: <span style="color: #A5D6FF;">"pixel-perfect"</span>,
+              </div>
+              <div style="padding-left: 16px;">
+                <span style="color: #D2A8FF;">speed</span>: <span style="color: #79C0FF;">60</span>,
+              </div>
+              <div style="padding-left: 16px;">
+                <span style="color: #D2A8FF;">status</span>: <span style="color: #A5D6FF;">"ready"</span>
+              </div>
+              <div>};</div>
+            </div>
+
+            <!-- Foreground Cutout: asset image -->
+            <div class="horse-cutout-layer">
+              <img src="asset/picture.png" alt="Almer Hadyan portrait" class="hero-asset-image" />
+            </div>
+          </div>
+          <div style="height: 20px; background-color: #050709;"></div>
+        </div>
+
+        <!-- Floating Badge Bottom: WCAG AAA Hardened -->
+        <div class="floating-badge-bottom">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--green);"></span>
+          <span>WCAG AAA Hardened</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         01 // OVERVIEW · THE MANIFESTO
+    ==================================================================== -->
+    <section class="section-manifesto">
+      <!-- Left Card: The Manifesto -->
+      <div class="card manifesto-card">
+        <div>
+          <div class="section-badge badge-cyan">01 // OVERVIEW · THE MANIFESTO</div>
+          <h2 class="manifesto-quote">
+            “Software should run with mathematical elegance, yet feel as intuitive as human thought.”
+          </h2>
+          <p class="manifesto-body">
+            Operating from Indonesia 🇮🇩 for forward-thinking engineering teams worldwide. I specialize in breaking down bloated interfaces into sleek, performant components where design systems reflect actual production code without divergence.
+          </p>
+        </div>
+        <div class="manifesto-footer">
+          <span style="color: var(--cyan); font-weight: 700;">&gt;_</span>
+          <span style="color: #CBD5E1;">remote_env: Jakarta // GMT+7</span>
+          <span style="color: #475569;">|</span>
+          <span>Global Asynchronous</span>
+        </div>
+      </div>
+
+      <!-- Right 2x2 Stats Grid -->
+      <div class="stats-grid">
+        <div class="card stat-card">
+          <div class="stat-icon stat-icon-cyan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.5 8.5A2.5 2.5 0 0 1 6 6h3l1.8 2H18a2.5 2.5 0 0 1 2.5 2.5v6A2.5 2.5 0 0 1 18 19H6a2.5 2.5 0 0 1-2.5-2.5v-8Z"/>
+              <path d="M8.5 11.5h7M8.5 14.5h9"/>
+              <path d="M5.5 17.5h13"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num">16+</div>
+            <div class="stat-label">&gt; Project Repos, Apps &amp; Systems</div>
+          </div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="stat-icon stat-icon-green">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 17.5V9.5"/>
+              <path d="M9.5 17.5V6.5"/>
+              <path d="M15 17.5v-4.5"/>
+              <path d="M20.5 17.5v-8"/>
+              <path d="M3.5 18.5h17"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num">2+ Yrs</div>
+            <div class="stat-label">&gt; Full-Stack UX &amp; UI Architecture</div>
+          </div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="stat-icon stat-icon-cyan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.8v5.2M12 16v5.2M2.8 12h5.2M16 12h5.2"/>
+              <path d="m6.5 6.5 3.2 3.2m5.6 5.6 3.2 3.2M17.5 6.5l-3.2 3.2M9.7 14.3 6.5 17.5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num">
+              <span style="color: var(--cyan);">80+</span> Vectors
+            </div>
+            <div class="stat-label">&gt; Design Systems • Frontend • Graphics</div>
+          </div>
+        </div>
+
+        <div class="card stat-card">
+          <div class="stat-icon stat-icon-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3 16a9 9 0 0 1 18 0h-3a6 6 0 0 0-12 0H3Z"/>
+              <path d="m11.2 14.4 5.6-5.7-3.1 7.4-2.5-1.7Z"/>
+              <circle cx="12" cy="14.5" r="1.6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num" style="color: var(--cyan);">100%</div>
+            <div class="stat-label">&gt; Pixel &amp; DOM Layout Fidelity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         02 // DEPLOYMENTS · PRODUCTION BUILDS (SELECTED PROJECT)
+    ==================================================================== -->
+    <section id="projects" class="section-projects">
+      <div class="section-head-row">
+        <div>
+          <div class="section-badge badge-green">02 // DEPLOYMENTS · PRODUCTION BUILDS</div>
+          <h2 class="section-title">Selected Project</h2>
+          <p class="section-subtitle">
+            Engineered products delivering concrete operational impact and polished interface craft.
+          </p>
+        </div>
+        <a href="#explorer" class="font-mono" style="font-size: 12px; color: var(--cyan);">
+          $ cd /projects/all ↓
+        </a>
+      </div>
+
+      <!-- Project 1: Food Delivery App -->
+      <div class="card project-card">
+        <div>
+          <div class="tags-row">
+            <span class="tag tag-green">&gt; Project ENGINE</span>
+            <span class="tag tag-gray">intermediate designer · FIGMA TOKENS</span>
+            <span class="tag tag-cyan">STATUS: project</span>
+          </div>
+
+          <h3 class="project-title">
+            Food — Food delivery app, search some food easy and simple
+          </h3>
+
+          <p class="project-desc">
+            Design UI food apps, for buy some food more easy with online, in this ui i make for on boarding, log in, sign up page, home page, chef interface, buying page and, acount page with the money you have, this ui i make more than 50 screen, include log in and on boarding
+          </p>
+
+          <div class="project-metrics">
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--cyan);">Almer</div>
+              <div class="metric-label">Developer app</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: #FFFFFF;">2</div>
+              <div class="metric-label">Cover design bonus</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--green);">50+</div>
+              <div class="metric-label">All Screen App</div>
+            </div>
+          </div>
+
+          <div class="project-action-row">
+            <a href="projects/food-delivery.html" class="btn-cyan">
+              <span>[See the project↗]</span>
+            </a>
+            <span class="font-mono" style="font-size: 11px; color: var(--text-dim);">&gt; git open the project/2025</span>
+          </div>
+        </div>
+
+        <a href="projects/food-delivery.html" class="project-media" style="background: linear-gradient(135deg, #FDB954 0%, #F5972C 100%); padding: 0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <img src="asset/food%20app%20burger.png" alt="Food app burger mockup" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </a>
+      </div>
+
+      <!-- Project 2: Potrofolio (Media on Left, Content on Right) -->
+      <div class="card project-card project-card-reverse">
+        <a href="projects/potrofolio.html" class="project-media" style="background: #050709; padding: 0; display: block; text-align: center;">
+          <img src="asset/portofolio.png" alt="Portfolio project preview" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </a>
+
+        <div>
+          <div class="tags-row">
+            <span class="tag tag-cyan">Potrofolio design</span>
+            <span class="tag tag-gray">Figma · HTML · CSS</span>
+            <span class="tag tag-cyan">project design</span>
+          </div>
+
+          <h3 class="project-title">
+            Potrofolio - Potrofolio design, about my personal project
+          </h3>
+
+          <p class="project-desc">
+            I created a portfolio design themed around code and design, featuring bright blue and black as the primary colors, the portfolio showcases some of the projects I have completed during my time as an intermediate designer and junior programmer.
+          </p>
+
+          <div class="project-metrics">
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--cyan);">Almer</div>
+              <div class="metric-label">Potrofolio by:</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: #FFFFFF;">16+</div>
+              <div class="metric-label">Project</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--green);">3+</div>
+              <div class="metric-label">Years in Design and coding</div>
+            </div>
+          </div>
+
+          <div class="project-action-row">
+            <a href="projects/potrofolio.html" class="btn-cyan">
+              <span>[See the project ↗]</span>
+            </a>
+            <span class="font-mono" style="font-size: 11px; color: var(--text-dim);">&gt; git clone aether-agentic-v2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Logo Animation - Brand Space -->
+      <div class="card project-card">
+        <div>
+          <div class="tags-row">
+            <span class="tag tag-green">&gt; Project animation</span>
+            <span class="tag tag-gray">Figma · Lottie</span>
+          </div>
+
+          <h3 class="project-title">
+            Logo Animation - Brand Space logo animation
+          </h3>
+
+          <p class="project-desc">
+            This image is a project poster for an animation logo. It explains that the logo animation was made using Lottie files in 6 minutes with a black and white theme. The poster also shows the project creators, a YouTube preview, and a QR code to view the animated logo.
+          </p>
+
+          <div class="project-metrics">
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--cyan);">Almer</div>
+              <div class="metric-label">Develop by:</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: #FFFFFF;">30 FPS</div>
+              <div class="metric-label">Animation FPS</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value" style="color: var(--amber);">10 SEC</div>
+              <div class="metric-label">Second that make</div>
+            </div>
+          </div>
+
+          <div class="project-action-row">
+            <a href="projects/brand-space-logo.html" class="btn-cyan">
+              <span>[See the project ↗]</span>
+            </a>
+            <span class="font-mono" style="font-size: 11px; color: var(--text-dim);">&gt; branch: feat/spatial-v3</span>
+          </div>
+        </div>
+
+        <a href="projects/brand-space-logo.html" class="project-media" style="background: #000000; padding: 0; display: flex; align-items: center; justify-content: center;">
+          <img src="asset/animation.png" alt="Brand space logo animation preview" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         03 // INDEX · OTHER PROJECT (PROJECT EXPLORER & APP)
+    ==================================================================== -->
+    <section id="explorer" class="section-explorer">
+      <div class="section-head-row">
+        <div>
+          <div class="section-badge badge-cyan">03 // INDEX · OTHER PROJECT</div>
+          <h2 class="section-title">Project Explorer &amp; app</h2>
+          <p class="section-subtitle">
+            4 of project that i make, one potrofolio and 3 again ui design that i make, food, ai, and food app
+          </p>
+        </div>
+
+        <!-- Filter Buttons (Fully Interactive Vanilla JS) -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">[ all (4) ]</button>
+          <button class="filter-btn" data-filter="ui-ux">[ ui-ux ]</button>
+          <button class="filter-btn" data-filter="graphic-art">[ graphic-art ]</button>
+          <button class="filter-btn" data-filter="web-design">[ web-design ]</button>
+          <button class="filter-btn" data-filter="mobile-app">[ mobile-app ]</button>
+        </div>
+      </div>
+
+      <!-- 4 Explorer Cards Grid -->
+      <div class="explorer-grid">
+        <!-- Card 1: See all of my project -->
+        <a href="projects/potrofolio.html" class="card explorer-card" data-category="web-design ui-ux graphic-art">
+          <div>
+            <div class="explorer-thumb" style="background: #050709; padding: 0; overflow: hidden;">
+              <img src="asset/portofolio.png" alt="Portfolio project preview" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <h3 class="explorer-title">See all of my project</h3>
+            <p class="explorer-desc">
+              This is my Potrofolio, yeah you see to in here, in here there is my Best Project, and about my Project in this potrofolio
+            </p>
+          </div>
+          <div class="explorer-footer">
+            <span>stack: All project</span>
+            <span style="color: var(--cyan); font-size: 14px;">↗</span>
+          </div>
+        </a>
+
+        <!-- Card 2: Food app -->
+        <a href="projects/food-delivery.html" class="card explorer-card" data-category="ui-ux mobile-app">
+          <div>
+            <div class="explorer-thumb" style="background: #050709; padding: 0; overflow: hidden;">
+              <img src="asset/food app burger.png" alt="Food app burger preview" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+            <h3 class="explorer-title">Food app</h3>
+            <p class="explorer-desc">
+              Make Delivery food easy, in this app you can see many restaurant and get delivery the food easy
+            </p>
+          </div>
+          <div class="explorer-footer">
+            <span>stack: Figma · Prototype</span>
+            <span style="color: var(--cyan); font-size: 14px;">↗</span>
+          </div>
+        </a>
+
+        <!-- Card 3: AI chatbot (ex) app -->
+        <a href="projects/ai-chatbot.html" class="card explorer-card" data-category="ui-ux mobile-app">
+          <div>
+            <div class="explorer-thumb" style="background: #050709; padding: 0; overflow: hidden;">
+              <img src="asset/ai_chat_bot.jpeg" alt="AI chatbot app preview" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+            </div>
+            <h3 class="explorer-title">AI chatbot ( ex ) app</h3>
+            <p class="explorer-desc">
+              Ai Chatbot ( ex ), this is the design that i make and colaboration with my team for it
+            </p>
+          </div>
+          <div class="explorer-footer">
+            <span>stack: Figma · Prototype</span>
+            <span style="color: var(--cyan); font-size: 14px;">↗</span>
+          </div>
+        </a>
+
+        <!-- Card 4: Food app (NM) -->
+        <a href="projects/food-app-nm.html" class="card explorer-card" data-category="ui-ux mobile-app">
+          <div>
+            <div class="explorer-thumb" style="background: #050709; padding: 0; overflow: hidden;">
+              <img src="asset/food%20app%20NM.png" alt="Food app NM preview" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+            </div>
+            <h3 class="explorer-title">Food app ( NM )</h3>
+            <p class="explorer-desc">
+              This is my Second food app, but the different From Before, this food app have payment Ui, and more Complexs
+            </p>
+          </div>
+          <div class="explorer-footer">
+            <span>stack: Figma</span>
+            <span style="color: var(--cyan); font-size: 14px;">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         04 // PHILOSOPHY · THE CODE OF CRAFT
+    ==================================================================== -->
+    <section id="philosophy" class="section-philosophy">
+      <!-- Left Column: Photo Card & Metadata Table -->
+      <div>
+        <div class="card photo-card">
+          <div class="photo-inner">
+            <img src="asset/foto.png" alt="Almer Hadyan photo" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <div class="photo-badge">git:operator // almer.hadyan</div>
+          </div>
+          <div class="photo-meta">
+            <div class="photo-name">Almer Hadyan</div>
+            <div class="photo-bio">&gt; Hybrid Design Engineer operating across GMT+7 / PST / CET timezones.</div>
+          </div>
+        </div>
+
+        <!-- System Metadata Table -->
+        <div class="card meta-table">
+          <div class="meta-row">
+            <span class="meta-key">SYS_LOCATION</span>
+            <span>Indonesia 🇮🇩 (GMT+7)</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">CORE_VECTOR</span>
+            <span style="color: var(--cyan);">Design Systems &amp; Frontend</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">DEPLOYMENT_STATUS</span>
+            <span style="color: var(--green);">● Ready for Inquiries</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">SUBSYSTEMS</span>
+            <span style="color: #CBD5E1;">Figma · HTML,CSS,JS · Photopea</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Philosophy Prose & 6 Mini Skill Cards -->
+      <div>
+        <div class="section-badge badge-cyan">04 // PHILOSOPHY · THE CODE OF CRAFT</div>
+        <h2 style="font-size: 32px; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+          I craft software with heart, architectural discipline, and intentional restraint.
+        </h2>
+        <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+          My name is Almer Hadyan, a passionate designer specializing in UI/UX design. I focus on creating clean, functional, and user-centered digital experiences that not only look visually appealing but also solve real problems.
+        </p>
+        <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px;">
+          I born in jakarta, 2012 Mei, i live in Bekasi, now i am still study at, as to be IT student in IDN Boarding School, Jonggol, in IDN i learn many Thing, but i am more interest at design, in design i learn more about HTML, CSS, JavaScript, Illustration, UI, UX and many again, and i will show you my skill and project in this potrofolio
+        </p>
+
+        <!-- 3x2 Mini Skill Cards Grid -->
+        <div class="skills-mini-grid">
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--cyan);">// HTML Beginner</div>
+            <div class="mini-skill-name">HTML</div>
+            <div class="mini-skill-desc">I've learn HTML For the beginer programing</div>
+          </div>
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--cyan);">// CSS Beginner</div>
+            <div class="mini-skill-name">CSS</div>
+            <div class="mini-skill-desc">I learn CSS For the beginer Programing</div>
+          </div>
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--cyan);">// JavaScript Beginner</div>
+            <div class="mini-skill-name">JavaScript</div>
+            <div class="mini-skill-desc">I learn JavaScript for start making backend programing</div>
+          </div>
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--green);">// UI Designer Intermediate</div>
+            <div class="mini-skill-name">UI Designer</div>
+            <div class="mini-skill-desc">I've learn, and study UI at least 2 years in UI</div>
+          </div>
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--green);">// UX Designer Intermediate</div>
+            <div class="mini-skill-name">UX Designer</div>
+            <div class="mini-skill-desc">I've learn, and study UX at least 2 years in UX</div>
+          </div>
+          <div class="card mini-skill-card">
+            <div class="mini-skill-prefix" style="color: var(--amber);">// Illustrator advance</div>
+            <div class="mini-skill-name">Illustrator</div>
+            <div class="mini-skill-desc">I Have been Illustrate design moretime, more than 5 years</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         05 // SKILL · PROJECT// (SKILL THAT I'VE LEARN)
+    ==================================================================== -->
+    <section id="skills" class="section-skills">
+      <div class="section-badge badge-cyan">05 // SKILL · PROJECT//</div>
+      <h2 class="section-title">Skill that i've learn</h2>
+      <p class="section-subtitle">
+        From begining i have been in world of IT until now, what skill i already learn?
+      </p>
+
+      <div class="skills-3col">
+        <!-- Skill 1 -->
+        <div class="card skill-box">
+          <div>
+            <div class="stat-icon stat-icon-cyan" style="margin-bottom: 16px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 19 7-7 3 3-7 7-3-3z"/>
+                <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="m2 2 7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">UI / UX &amp; Systems &amp; Design</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              I've skill in UI and UX Ofcourse, i already learn it more than 2 years, of couse already intermediate in UI Design and UX System
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip">Design Systems</span>
+            <span class="skill-chip">User Experience</span>
+            <span class="skill-chip">User Interface</span>
+            <span class="skill-chip">Prototyping UI</span>
+            <span class="skill-chip">Layouting UI system</span>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="card skill-box">
+          <div>
+            <div class="stat-icon stat-icon-green" style="margin-bottom: 16px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"/>
+                <line x1="12" y1="19" x2="20" y2="19"/>
+              </svg>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Frontend &amp; Web progaming</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              I've already learn Frontend and start learn Backend like JavaScript and other, but i still beginer on it, and still continue on it
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">CSS</span>
+            <span class="skill-chip">HTML</span>
+            <span class="skill-chip">Web Progaming</span>
+            <span class="skill-chip">Frontend &amp; backend</span>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="card skill-box">
+          <div>
+            <div class="stat-icon stat-icon-amber" style="margin-bottom: 16px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Illustrator advance</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              This is my skill that i've been learn more than 5 years, i'm illustrate from only in paper, until already at figma ofcoure
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-chip">Illustrator</span>
+            <span class="skill-chip">Figma</span>
+            <span class="skill-chip">Vector</span>
+            <span class="skill-chip">Vector advance</span>
+            <span class="skill-chip">Illustration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EXPERIENCE & MY JOURNEY
+    ==================================================================== -->
+    <section id="experience" class="section-experience">
+      <h2 class="section-title">Experience &amp; My Journey</h2>
+      <p class="section-subtitle">
+        An honest, transparent progression from graphic design foundations to end-to-end product design.
+      </p>
+
+      <div class="timeline">
+        <!-- Node 1 -->
+        <div class="timeline-item">
+          <span class="timeline-dot dot-active"></span>
+          <div class="card timeline-card">
+            <div class="timeline-meta">
+              <span style="color: var(--cyan); font-weight: 700;">2021 — PRESENT</span>
+              <span style="color: var(--text-dim);">Independent · Creative Technologist</span>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 6px;">Illustrator advance</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              This is my skill that i've been learn more than 5 years, i'm illustrate from only in paper, until already at figma ofcoure
+            </p>
+          </div>
+        </div>
+
+        <!-- Node 2 -->
+        <div class="timeline-item">
+          <span class="timeline-dot dot-inactive"></span>
+          <div class="card timeline-card">
+            <div class="timeline-meta">
+              <span style="color: var(--text-muted); font-weight: 700;">2024 — PRESENT</span>
+              <span style="color: var(--text-dim);">Independent · Creative Technologist</span>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 6px;">UI/UX Design and System</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              Constructing modern interactive portfolio experiences, exploring agentic workspace design patterns, and bridging modern web development with tactile, human-centered UI frameworks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Node 3 -->
+        <div class="timeline-item">
+          <span class="timeline-dot dot-inactive"></span>
+          <div class="card timeline-card">
+            <div class="timeline-meta">
+              <span style="color: var(--text-muted); font-weight: 700;">2025 — PRESENT</span>
+              <span style="color: var(--text-dim);">Independent · Creative Technologist</span>
+            </div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 6px;">Frontend and Web progaming</h3>
+            <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+              I've already learn Frontend and start learn Backend like JavaScript and other, but i still beginer on it, and still continue on it
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         06 // SANDBOX · INTERACTIVE EXPERIMENTAL LAB
+    ==================================================================== -->
+    <section id="sandbox" class="section-sandbox">
+      <div class="section-badge badge-cyan">06 // SANDBOX · INTERACTIVE EXPERIMENTAL LAB</div>
+      <h2 class="section-title">Playground &amp; Interaction Lab</h2>
+      <p class="section-subtitle">
+        Touch and test these mini micro-interactions running live in dark mode.
+      </p>
+
+      <div class="sandbox-grid">
+        <!-- Widget 01: Cursor Magnet & Gyro -->
+        <div class="card sandbox-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--cyan); margin-bottom: 8px;">
+              <span>&gt; WIDGET_01</span>
+              <span style="color: var(--text-dim);">⊕</span>
+            </div>
+            <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 4px;">Cursor Magnet &amp; Gyro</h3>
+            <p style="font-size: 11px; color: var(--text-muted);">
+              Hover and glide your mouse across to measure real-time 3D matrix orientation.
+            </p>
+          </div>
+
+          <div id="gyro-box" class="gyro-box">
+            <div id="gyro-readout" class="font-mono" style="font-size: 13px; font-weight: 700; color: var(--cyan);">
+              X: 0.00° | Y: 0.00°
+            </div>
+            <div class="font-mono" style="font-size: 10px; color: var(--text-dim); margin-top: 4px;">
+              &gt; 3D perspective tracking
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--text-dim);">
+            <span>persp: 600px</span>
+            <span style="color: var(--green);">ENGINE_ONLINE</span>
+          </div>
+        </div>
+
+        <!-- Widget 02: Hex Theme Generator -->
+        <div class="card sandbox-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--green); margin-bottom: 8px;">
+              <span>&gt; WIDGET_02</span>
+              <span style="color: var(--text-dim);">⚡</span>
+            </div>
+            <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 4px;">Hex Theme Generator</h3>
+            <p style="font-size: 11px; color: var(--text-muted);">
+              Cycle across dark-mode high-tech accent palettes.
+            </p>
+          </div>
+
+          <div id="palette-preview" class="palette-box" style="background-color: rgba(0, 240, 255, 0.08); border-color: rgba(0, 240, 255, 0.3);">
+            <div id="palette-hex" class="font-mono" style="font-size: 15px; font-weight: 800; color: var(--cyan);">
+              #00F0FF
+            </div>
+            <div id="palette-name" class="font-mono" style="font-size: 9px; color: var(--text-dim); margin-top: 2px;">
+              CYBER CYAN
+            </div>
+          </div>
+
+          <button id="btn-cycle-palette" class="btn-dark" style="width: 100%; justify-content: center;">
+            $ cycle_palette() ↻
+          </button>
+        </div>
+
+        <!-- Widget 03: Tactile Spring Physics -->
+        <div class="card sandbox-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--amber); margin-bottom: 8px;">
+              <span>&gt; WIDGET_03</span>
+              <span style="color: var(--text-dim);">〰</span>
+            </div>
+            <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 4px;">Tactile Spring Physics</h3>
+            <p style="font-size: 11px; color: var(--text-muted);">
+              Tap to trigger elastic spring compression and counter telemetry.
+            </p>
+          </div>
+
+          <div class="pulse-box">
+            <button id="btn-pulse" class="btn-cyan">
+              $ trigger_pulse() ▶
+            </button>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: var(--text-dim);">
+            <span>Interaction Hits:</span>
+            <span id="hits-counter" style="color: var(--cyan); font-weight: 700; font-size: 12px;">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         07 // TRANSMISSION · COMMUNICATION PORT
+    ==================================================================== -->
+    <section id="contact" class="section-contact">
+      <!-- Left Column -->
+      <div>
+        <div class="section-badge badge-green">07 // TRANSMISSION · COMMUNICATION PORT</div>
+        <h2 style="font-size: 36px; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">
+          Let's build something technically unforgettable.
+        </h2>
+        <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+          Have a project inquiry, design engineering role, or want to discuss token architecture, WebGL shaders, and high-framerate UX? My terminal is always listening.
+        </p>
+
+        <div style="margin-bottom: 24px;">
+          <a href="mailto:ah.raditya205@gmail.com" class="btn-cyan">
+            <span>$ mailto: ah.raditya205@gmail.com ↗</span>
+          </a>
+          <div class="font-mono" style="font-size: 10px; color: var(--text-dim); margin-top: 8px;">
+            AVG_RESPONSE &lt; 24h // PGP Available
+          </div>
+        </div>
+
+        <div>
+          <div class="font-mono" style="font-size: 10px; color: var(--text-dim); margin-bottom: 12px;">
+            // CONNECTED REPOS &amp; PROFILES
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <a href="https://github.com/almerhadyan" target="_blank" rel="noopener noreferrer" class="btn-dark" style="padding: 8px 14px; font-size: 11px;">[GitHub]</a>
+            <a href="https://www.youtube.com/@AlmerHadyan.R.D" target="_blank" rel="noopener noreferrer" class="btn-dark" style="padding: 8px 14px; font-size: 11px;">[YouTube]</a>
+            <a href="https://www.instagram.com/almer.hrd/" target="_blank" rel="noopener noreferrer" class="btn-dark" style="padding: 8px 14px; font-size: 11px;">[Instagram]</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Terminal Contact Form -->
+      <div class="card contact-form-wrap">
+        <div class="terminal-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+            <span class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-left: 8px;">$ msg.dispatch()</span>
+          </div>
+          <span class="font-mono" style="font-size: 10px; color: var(--cyan); padding: 2px 8px; border-radius: 4px; background: color-mix(in srgb, var(--cyan) 10%, transparent); border: 1px solid color-mix(in srgb, var(--cyan) 30%, transparent);">
+            TLS_ENCRYPTED
+          </span>
+        </div>
+
+        <form id="contact-form" class="form-body" action="https://formsubmit.co/ah.raditya205@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio project inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none;" />
+          <div class="form-row-2">
+            <div>
+              <label class="form-label">&gt; user.name</label>
+              <input type="text" name="name" required placeholder="Alex Morgan" class="form-input" />
+            </div>
+            <div>
+              <label class="form-label">&gt; user.email</label>
+              <input type="email" name="email" required placeholder="alex@domain.io" class="form-input" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">&gt; payload.project_scope</label>
+            <select class="form-select" name="project_scope" required>
+              <option>UI/UX &amp; Design System Engineering</option>
+              <option>Frontend &amp; Web Programming</option>
+              <option>Mobile App UI Kit &amp; Prototyping</option>
+              <option>Brand &amp; Logo Animation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">&gt; payload.message_body</label>
+            <textarea name="message" rows="4" required placeholder="Brief project scope, timelines, or initial questions..." class="form-textarea"></textarea>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+            <button id="btn-submit-form" type="submit" class="btn-cyan">
+              <span>$ send_transmission() ▶</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+  ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: #fff;">&lt;/&gt; ALMER HADYAN</strong>
+        <span style="margin: 0 8px; color: var(--text-dim);">|</span>
+        <span>Designed &amp; engineered with pixel precision</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <span>status: <strong style="color: var(--green);">200 OK</strong></span>
+        <span>© 2026 Almer Hadyan 🇮🇩</span>
+        <button id="btn-top" class="btn-dark" style="padding: 4px 10px; font-size: 11px;">
+          ↑ top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

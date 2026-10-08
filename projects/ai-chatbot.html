@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot (ex) App — Almer Hadyan</title>
+  <link rel="icon" type="image/png" href="../asset/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .chatbot-grid {
+      height: 360px;
+      background: #1C1C1E;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 8px;
+      padding: 24px;
+      overflow: hidden;
+    }
+    .mock-screen {
+      border-radius: 6px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-loader" role="status" aria-label="Loading portfolio">
+    <div class="site-loader-panel" aria-hidden="true">
+      <div class="site-loader-header"><div class="site-loader-dots"><i></i><i></i><i></i></div><span class="site-loader-file">portfolio / init.js</span><span class="site-loader-state">RUNNING</span></div>
+      <div class="site-loader-code"><div><span>01</span> <b>const</b> portfolio = <em>"Almer Hadyan"</em>;</div><div><span>02</span> <b>await</b> loadProjects();</div><div><span>03</span> renderExperience(portfolio);</div><div><span>04</span> <strong>return</strong> <em>"ready"</em>;</div></div>
+      <div class="site-loader-progress"><i></i></div>
+      <div class="site-loader-message">BUILDING INTERFACE <span>...</span></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="../index.html" class="brand-link">
+        <img class="brand-emblem" src="../asset/logo.png" alt="Almer Hadyan logo" />
+        <div>
+          <div class="brand-text-main">
+            <span>ALMER HADYAN</span>
+            <span class="brand-dot"></span>
+          </div>
+          <div class="brand-subtext">DESIGN_ENGINEER.tsx</div>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <a href="../index.html" class="btn-dark">
+          <span style="color: #00F0FF;">←</span>
+          <span>cd /portfolio/home</span>
+        </a>
+        <a href="../index.html#contact" class="btn-cyan">
+          <span>$ hire</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div style="margin-bottom: 24px;">
+      <div class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-bottom: 16px;">
+        <a href="../index.html" style="color: var(--text-muted);">~/almer-hadyan</a> /
+        <a href="../index.html#projects" style="color: var(--text-muted);">deployments</a> /
+        <span style="color: var(--cyan);">ai-chatbot</span>
+      </div>
+
+      <div class="tags-row">
+        <span class="tag tag-green">&gt; Team Collaboration</span>
+        <span class="tag tag-gray">Figma · Prototype</span>
+        <span class="tag tag-cyan">AI Interface</span>
+      </div>
+
+      <h1 style="font-size: 44px; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">
+        AI chatbot ( ex ) app
+      </h1>
+
+      <p style="font-size: 16px; color: var(--text-muted); max-width: 800px; line-height: 1.6; margin-bottom: 32px;">
+        Ai Chatbot ( ex ), this is the design that i make and colaboration with my team for it. Features complete light and dark mode mobile flows for conversational AI assistants.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px;">
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">COLLABORATION</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--cyan); margin-top: 4px;">Almer &amp; Design Team</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">THEMES</div>
+          <div style="font-size: 16px; font-weight: 800; color: #FFFFFF; margin-top: 4px;">Light &amp; Dark Mode</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">SCREENS</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--green); margin-top: 4px;">30+ Mobile Screens</div>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <div class="font-mono" style="font-size: 11px; color: var(--text-dim);">PLATFORM</div>
+          <div style="font-size: 16px; font-weight: 800; color: var(--amber); margin-top: 4px;">iOS / Android Figma Tokens</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Container (Matches Rectangle 4200.png) -->
+    <div class="card" style="overflow: hidden; margin-bottom: 48px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background-color: #080B0F; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="font-mono" style="font-size: 12px; color: var(--text-dim); margin-left: 12px;">preview://ai-chatbot/brainbox.fig</span>
+        </div>
+        <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">&gt; git checkout feat/ai-chatbot-ui</span>
+      </div>
+
+      <div style="padding: 0; overflow: hidden; background: #0B0F14; display: flex; align-items: center; justify-content: center; min-height: 360px;">
+        <img src="../asset/ai_chat_bot.jpeg" alt="AI chatbot app preview" style="display: block; max-width: 100%; max-height: 420px; width: auto; height: auto; object-fit: contain; object-position: center; background: #0B0F14;" />
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+      <div class="card" style="padding: 32px;">
+        <div class="section-badge badge-cyan">01 // CONVERSATIONAL UX</div>
+        <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">BrainBox Collaborative Architecture</h2>
+        <p style="color: var(--text-muted); font-size: 14px; line-height: 1.8;">
+          Collaborated as a team in Figma to establish a shared component library with instant light/dark variable switching, clean typographic message bubbles, and frictionless authentication screens.
+        </p>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div class="font-mono" style="font-size: 11px; color: var(--text-dim); margin-bottom: 16px;">// ACTIONS</div>
+        <a href="../index.html#projects" class="btn-cyan" style="width: 100%; justify-content: center;">
+          ← Back to All Projects
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: #fff;">&lt;/&gt; ALMER HADYAN</strong>
+        <span style="margin: 0 8px; color: var(--text-dim);">|</span>
+        <span>Designed &amp; engineered with pixel precision</span>
+      </div>
+      <div>
+        <span>status: <strong style="color: var(--green);">200 OK</strong></span>
+        <span style="margin-left: 16px;">© 2026 Almer Hadyan 🇮🇩</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
